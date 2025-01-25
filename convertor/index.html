@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature & Currency Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <div class="card-inner">
+      <div class="card-front">
+        <h2>Temperature Converter</h2>
+        <input type="number" id="tempValue" placeholder="Enter Temparature">
+        <select id="tempUnit">
+          <option value="C">Celsius</option>
+          <option value="F">Fahrenheit</option>
+        </select>
+        <button onclick="convertTemperature()">Convert</button>
+        <p id="tempResult"></p>
+        <button onclick="flipCard()">Flip to Currency Converter</button>
+      </div>
+
+      <div class="card-back">
+        <h2>Currency Converter</h2>
+        <input type="number" id="currencyAmount" placeholder="Enter Amount">
+        <select id="currencyFrom">
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="INR">INR</option>
+        </select>
+        <select id="currencyTo">
+          <option value="INR">INR</option>
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+        </select>
+        <button onclick="convertCurrency()">Convert</button>
+        <p id="currencyResult"></p>
+        <button onclick="flipCard()">Flip to Temperature Converter</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

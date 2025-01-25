@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    background-size: cover;
+    background-position: center;
+    background: linear-gradient(210deg, #1d535b, #21585f, #3f7d7c, #8fd1b6, #bcf9cf, #c3ffd3); /* made at https://learnui.design/tools/gradient-generator.html */
+    transition: background-image 1s ease; /* Smooth transition for background */
+  }
+  
+  .card {
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+  }
+  
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+  }
+  
+  .card.flip .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    background-color: #d1d4d3;
+    border-radius: 50px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0.9;
+    box-shadow: 2px 2px 3px 3px rgb(159, 206, 212);
+  }
+  
+  .card-back {
+    transform: rotateY(180deg);
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  input, select, button {
+    margin: 10px 0;
+    padding: 7px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
