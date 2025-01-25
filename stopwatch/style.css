@@ -1,0 +1,52 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(15deg, #142850, #14365f, #13476f, #125d80, #107792, #0d96a5, #09b8b4, #04ccb1); /* made at https://learnui.design/tools/gradient-generator.html */
+  }
+  
+  .timer {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    margin-top: 1px;
+    color: white;
+  }
+  .timer:hover{
+    color:rgb(179, 179, 227)
+  }
+  .buttons {
+    display: flex;
+    gap: 20px;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s;
+  }
+  button:hover {
+    background-color: #151515;
+  }
+  h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 80px;
+
+  }
+  h1:hover{
+    color:#04ccb1
+  }
